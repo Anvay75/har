@@ -2,7 +2,8 @@ import random
 ycp = 0
 ccp = 0
 tie = 0
-for i in range (10):
+rounds = int(input("how many rounds do you want :"))
+for i in range (rounds):
 
     print("1.rock")
     print("2.paper")
@@ -38,6 +39,11 @@ for i in range (10):
 
     elif yc == cc:
         tie = tie + 1
-
-    
+        print("it is a tie")
+if ycp > ccp:
+    print ("you won great job")
+elif ycp < ccp:
+    print("too bad the computer won")
+elif ycp == ccp:
+    print("it is a tie") 
 
